@@ -3,6 +3,8 @@
 @import "status-bar.css";
 @import "header.css";
 @import "nav-bar.css";
+@import "friend.css";
+
 
 * {
     box-sizing: border-box;
@@ -18,10 +20,5 @@ body{
 
 a{
     color: inherit;
-}
-
-.g-avatar{
-    /* 나중에 없앨건데 지금 사이즈 조정때문에 임시로 넣음  */
-    width: 100px;
-    height: 100px;
+    text-decoration: none;
 }

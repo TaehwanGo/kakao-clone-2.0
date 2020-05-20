@@ -38,7 +38,7 @@
         <header class="friends__header">
             <div class="friends__friend friend friend--lg">
                 <div class="friend__column">
-                    <img src="images/profilephoto.png" alt="profile-photo" class="g-avatar friend" />
+                    <img src="images/profilephoto.png" alt="profile-photo" class="g-avatar friend__avatar" />
                     <div class="friend__content">
                         <span class="friend__name">
                             Tony
@@ -54,7 +54,7 @@
             <h5 class="friends__title">Plus friend</h5>
             <div class="friends__friend friend">
                 <div class="friend__column">
-                    <img src="images/profilephoto.png" alt="profile-photo" class="g-avatar friend" />
+                    <img src="images/profilephoto.png" alt="profile-photo" class="friend__avatar" />
                     <div class="friend__content">
                         <span class="friend__name">
                             Plus Friend
@@ -65,9 +65,10 @@
         </div>
         <ul class="friends__list">
             <h5 class="friends__title">Friends 649</h5>
-            <li class="friends__friend friend">
+            <li class="friends__friend friend friend--lg">
+                <!-- 위에 friend--lg가 추가 될 수도 있음 -->
                 <div class="friend__column">
-                    <img src="images/profilephoto.png" alt="profile-photo" class="g-avatar friend" />
+                    <img src="images/profilephoto.png" alt="profile-photo" class="friend__avatar" />
                     <div class="friend__content">
                         <span class="friend__name">
                             Tony
@@ -89,7 +90,7 @@
     <nav class="nav">
         <ul class="nav__list">
             <li class="nav__list-item">
-                <a href="friends.html" class="nav_list-link">
+                <a href="friends.html" class="nav__list-link">
                     <i class="fas fa-user"></i>
                 </a>
             </li>
