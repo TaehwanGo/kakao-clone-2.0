@@ -1,0 +1,157 @@
+@import "reset.css";
+/* @import "airpods.css";
+@import "profile.css"; */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: sans-serif;
+  width: 100%;
+  height: 1000px;
+  background-color: black;
+  padding: 5px;
+  font-family: "Open Sans"; /* 이거 빼먹었네 */
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* airpods */
+.airpods {
+  width: 220px;
+  height: 250px;
+  background-color: white;
+  /* font-size: 22px; */
+  /* font-weight: 600; */
+  margin: 5px;
+  border-radius: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.airpods__row-img {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+.airpods .airpods__img {
+  width: 100px;
+  /* background-color: green; */
+}
+.airpods .airpods__title {
+  margin-left: 10px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.airpods .airpods__description {
+  font-size: 10px;
+  padding: 10px;
+  opacity: 0.5;
+}
+.airpods .airpods__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.airpods__starrate {
+  width: 40px;
+}
+.airpods__bottom-column {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+.airpods__bottom-column .airpods__bottom-column-row {
+  display: flex;
+}
+
+/* profile */
+.profile {
+  overflow: hidden;
+  margin: 10px;
+  width: 220px;
+  height: 220px;
+  background-color: white;
+  margin: 5px;
+  border-radius: 10px;
+  /* I don't know why border-radius doesn't work :
+  fuck ! overflow: hidden ! is awesome */
+}
+.profile .profile__bg{ /* 사진이 뭉게지지 않고 크기가 안맞으면 윗부분만 출력됨 */
+  height: 88px;
+  width: 100%;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRfw4QlkYl2bzURb6Okp--rF8hs93IxlGP5gQ09f1lcEnCbWzRa&usqp=CAU");
+  background-size: cover;
+}
+
+.profile .profile__row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.profile__row:nth-child(1) {
+  height: 40%;
+}
+.profile__row:nth-child(2) {
+  /* position: relative; */
+  height: 60%;
+  background-color: pink;
+}
+
+.profile .profile__background {
+  height: 88px;
+  width: 100%;
+  /* height: 100%; */
+}
+
+.profile__photo {
+  width: 50px;
+  height: 50px;
+  border: 2px solid white;
+  border-radius: 50%;
+  position: relative; /* absolute */
+  top: -25px;
+  z-index: 1;
+}
+
+.profile__name {
+  /* margin-top: 32px; */
+  margin-top: -18px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.profile__description {
+  margin: 10px;
+  font-size: 12px;
+  opacity: 0.6;
+}
+.profile__bottom {
+  width: 100%;
+  height: 100%;
+  /* background-color: green; */
+  padding: 10px 25px;
+  display: flex;
+  justify-content: space-between;
+}
+.profile__bottom .profile__bottom-btn {
+  width: 80px;
+  height: 28px;
+  background-color: #6b75ff;
+  border-radius: 3px;
+  color: white;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile__bottom-btn:nth-child(2) {
+  background-color: #eaecff;
+  color: #6b75ff;
+}
