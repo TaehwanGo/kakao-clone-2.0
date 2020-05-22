@@ -30,6 +30,7 @@ body {
   box-shadow: 10px 10px 10px 10px rgb(146, 146, 146),
     inset -6px -6px 15px rgba(145, 160, 180, 0.45);
 }
+
 .header .header__time {
   font-weight: 700;
 }
@@ -164,7 +165,7 @@ body {
 }
 
 .nav {
-  padding: 30px;
+  padding: 0px 30px;
   width: 100%;
   height: 100px;
   position: absolute;
@@ -179,12 +180,16 @@ body {
 }
 
 .nav .nav__btn {
+  padding: 0px 10px;
+  padding-top: 30px;
   cursor: pointer;
   font-size: 25px;
   color: rgb(155, 155, 155);
 }
 .nav .nav__btn:nth-child(2) {
   color: #3256e6;
+  /* background-color: pink; */
+  border-top: 2px solid #3256e6;
 }
 .nav .center_btn {
   z-index: -1;
@@ -193,7 +198,7 @@ body {
   padding: 10px;
   border-radius: 50%;
   background-color: #eeeeeebd;
-  top: -70px;
+  top: -40px;
   /* border: 10px solid rgb(214, 215, 230); */
 }
 .nav .center_btn i {
