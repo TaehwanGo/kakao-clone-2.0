@@ -55,6 +55,7 @@
 .chat-screen .chat__messages{
     display: flex;
     flex-direction: column;
+    /* justify-content: center; */
     align-items: center;
     border-top: 1px solid #F9F9F9;
     padding: 0px 20px;
@@ -76,13 +77,15 @@
 
 .message{
     display: flex;
-    align-items: center;
-    width: 50%;
+    /* align-items: center; */
+    align-items: flex-start;
+    /* width: 50%; */
+    margin-bottom: 20px;
 }
 
-.message .message__content{
+/* .message .message__content{
     width: 80%;
-}
+} */
 .incoming-message {
     align-self: flex-start;
 }
@@ -99,8 +102,28 @@
 
 .message .message__bubble{
     background-color: white;
-    box-shadow: 0 30px 60px -12px rgba(50,50,93,.25), 
-        0 18px 36px -18px rgba(0,0,0,.3), 0 -12px 36px -8px rgba(0,0,0,.025);
+    box-shadow: 0 30px 60px 12px rgba(50,50,93,.25), 
+        0 18px 36px -8px rgba(0,0,0,.3), 0 -12px 36px 8px rgba(0,0,0,.025);
     padding: 10px 20px;
     border-radius: 20px;
+    color: white;
+    font-weight: 600;
+    display: block;
+}
+
+.incoming-message .message__author{
+    margin-top: 10px; /* span은 margin이 안먹는듯 그래서 display: block으로 설정 */
+    display: block;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.incoming-message .message__bubble{
+    border-bottom-left-radius: 0px;
+    background-image: linear-gradient(to right, #7b4397, #dc2430);
+}
+
+.sent-message .message__bubble{
+    border-bottom-right-radius: 0px;
+    background-image: linear-gradient(to left, #00c6ff, #0072ff);
 }
